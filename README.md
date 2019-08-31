@@ -25,7 +25,7 @@ os_apikey = 'your-rest-api-key-goes-here'
 client = OneSignalAppClient(app_id=os_app_id, app_api_key=os_apikey)
 
 # Creates a new notification
-notification = Notification(app_id, Notification.DEVICES_MODE)
+notification = Notification(os_app_id, Notification.DEVICES_MODE)
 notification.include_player_ids = [player_id]  # Must be a list!
 
 try:
